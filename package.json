@@ -1,0 +1,120 @@
+{
+  "name": "express-cart",
+  "version": "1.1.16",
+  "description": "A fully functioning Node.js shopping cart with Stripe, PayPal and Authorize.net payments.",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "deploy": "gulp deploy",
+    "testdata": "node lib/testdata.js",
+    "test": "ava",
+    "dev": "gulp watch",
+    "lint": "eslint ./"
+  },
+  "ava": {
+    "serial": true,
+    "files": [
+      "./test/specs/*.js"
+    ],
+    "timeout": "10s",
+    "verbose": true,
+    "environmentVariables": {
+      "NODE_ENV": "test"
+    }
+  },
+  "engines": {
+    "node": "10.16.0"
+  },
+  "dependencies": {
+    "@adyen/api-library": "^2.1.7",
+    "ajv": "^6.10.2",
+    "async": "^2.6.3",
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cheerio": "^0.22.0",
+    "colors": "^1.4.0",
+    "connect-mongodb-session": "^2.2.0",
+    "cookie-parser": "^1.4.4",
+    "countries-list": "^2.5.0",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-rate-limit": "^5.0.0",
+    "express-session": "^1.17.0",
+    "feather-icons": "^4.25.0",
+    "glob": "^7.1.5",
+    "gulp-less": "^4.0.1",
+    "helmet": "^3.21.2",
+    "html-entities": "^1.2.0",
+    "i18n": "^0.8.4",
+    "lodash": "^4.17.15",
+    "lunr": "^2.3.8",
+    "mime-db": "^1.43.0",
+    "mime-type": "^3.0.7",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.3.3",
+    "mongodb-uri": "^0.9.7",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^4.7.0",
+    "numeral": "^2.0.6",
+    "object-hash": "^2.0.1",
+    "paypal-rest-sdk": "^1.6.9",
+    "rand-token": "^0.4.0",
+    "rimraf": "^2.7.1",
+    "sanitize-html": "^1.20.1",
+    "sitemap": "^1.6.0",
+    "string-strip-html": "^4.3.14",
+    "strip-bom": "^3.0.0",
+    "stripe": "^7.12.0",
+    "uglifycss": "0.0.27",
+    "yenv": "^2.1.1"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-extra-rules": "0.0.0-development",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-rename": "^1.4.0",
+    "less": "^3.10.3",
+    "supertest": "^4.0.2"
+  },
+  "main": "app.js",
+  "keywords": [
+    "Shopping cart",
+    "express",
+    "mongodb",
+    "nodejs",
+    "ecommerce",
+    "paypal",
+    "stripe",
+    "authorise.net",
+    "adyen",
+    "instore",
+    "lunr",
+    "cart",
+    "shopping"
+  ],
+  "author": "Mark Moffat",
+  "homepage": "https://expresscart.markmoffat.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrvautin/expressCart.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrvautin/expressCart/issues"
+  }
+}

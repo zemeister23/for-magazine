@@ -1,0 +1,40 @@
+{
+    "$id": "editProduct",
+    "type": "object",
+    "properties": {
+        "productId": {
+            "type": "string"
+        },
+        "productPermalink": {
+            "type": "string"
+        },
+        "productTitle": {
+            "type": "string"
+        },
+        "productPrice": {
+            "type": "string",
+            "format": "amount"
+        },
+        "productDescription": {
+            "type": "string"
+        },
+        "productPublished": {
+            "type": "boolean"
+        },
+        "productTags": {
+            "type": "string"
+        },
+        "productOptions": {
+            "type": ["object", "string", "null"]
+        },
+        "productComment": {
+            "type": "boolean"
+        },
+        "productStock": {
+            "type": ["number", "null"]
+        }
+    },
+    "required": [
+        "productId"
+    ]
+}
